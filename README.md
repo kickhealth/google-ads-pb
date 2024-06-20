@@ -1,12 +1,11 @@
-
 # Google Ads API Client Library for Golang
 
-[![Go](https://github.com/shenzhencenter/google-ads-pb/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/shenzhencenter/google-ads-pb/actions/workflows/go.yml)
-[![GoDoc](https://godoc.org/github.com/shenzhencenter/google-ads-pb?status.svg)](https://pkg.go.dev/github.com/shenzhencenter/google-ads-pb)
-[![Go Report Card](https://goreportcard.com/badge/github.com/shenzhencenter/google-ads-pb)](https://goreportcard.com/report/github.com/shenzhencenter/google-ads-pb)
+[![Go](https://github.com/kickhealth/google-ads-pb/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/kickhealth/google-ads-pb/actions/workflows/go.yml)
+[![GoDoc](https://godoc.org/github.com/kickhealth/google-ads-pb?status.svg)](https://pkg.go.dev/github.com/kickhealth/google-ads-pb)
+[![Go Report Card](https://goreportcard.com/badge/github.com/kickhealth/google-ads-pb)](https://goreportcard.com/report/github.com/kickhealth/google-ads-pb)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-This library provides a Golang client for the [Google Ads API](https://developers.google.com/google-ads/api/docs/start). It's fully generated from the [googleapis](https://github.com/googleapis/googleapis/tree/master/google/ads/googleads) repository. More information on the generation process can be found [here](https://github.com/shenzhencenter/google-ads-pb/blob/main/.github/workflows/generator.yml).
+This library provides a Golang client for the [Google Ads API](https://developers.google.com/google-ads/api/docs/start). It's fully generated from the [googleapis](https://github.com/googleapis/googleapis/tree/master/google/ads/googleads) repository. More information on the generation process can be found [here](https://github.com/kickhealth/google-ads-pb/blob/main/.github/workflows/generator.yml).
 
 Although this project isn't official, we deem it as low-risk due to its maturity and our two years of using it in production. However, always consult the [sunset schedule](https://developers.google.com/google-ads/api/docs/sunset-dates) of the Google Ads API.
 
@@ -19,20 +18,20 @@ Although this project isn't official, we deem it as low-risk due to its maturity
 
 ## Version support
 
-| google-ads-pb     | Google Ads API   | Sunset date                  |
-| ----------------- | ---------------- | ---------------------------- |
-| v1.17.0           | v17              | May 2025	                    |
-| v1.16.1           | v16.1            | January 2025	                |
-| v1.7.0            | v16              | January 2025	                |
-| v1.6.0            | v15              | September 25, 2024	          |
-| <del>v1.5.1</del> | <del>v14.1</del> | Deprecated                   |
-| <del>v1.5.0</del> | <del>v14</del>   | Deprecated                   |
-| <del>v1.4.1</del> | <del>v13.1</del> | Deprecated	                  |
-| <del>v1.4.0</del> | <del>v13</del>   | Deprecated	                  |
-| <del>v1.3.1</del> | <del>v12</del>   | Deprecated                   |
-| <del>v1.2.1</del> | <del>v11.1</del> | Deprecated                   |
-| <del>v1.2.0</del> | <del>v11</del>   | Deprecated                   |
-| <del>v1.1.1</del> | <del>v10</del>   | Deprecated                   |
+| google-ads-pb     | Google Ads API   | Sunset date        |
+| ----------------- | ---------------- | ------------------ |
+| v1.17.0           | v17              | May 2025           |
+| v1.16.1           | v16.1            | January 2025       |
+| v1.7.0            | v16              | January 2025       |
+| v1.6.0            | v15              | September 25, 2024 |
+| <del>v1.5.1</del> | <del>v14.1</del> | Deprecated         |
+| <del>v1.5.0</del> | <del>v14</del>   | Deprecated         |
+| <del>v1.4.1</del> | <del>v13.1</del> | Deprecated         |
+| <del>v1.4.0</del> | <del>v13</del>   | Deprecated         |
+| <del>v1.3.1</del> | <del>v12</del>   | Deprecated         |
+| <del>v1.2.1</del> | <del>v11.1</del> | Deprecated         |
+| <del>v1.2.0</del> | <del>v11</del>   | Deprecated         |
+| <del>v1.1.1</del> | <del>v10</del>   | Deprecated         |
 
 ## Requirements
 
@@ -43,9 +42,9 @@ Although this project isn't official, we deem it as low-risk due to its maturity
 ## Installation
 
 ```bash
-$ go get github.com/shenzhencenter/google-ads-pb
+$ go get github.com/kickhealth/google-ads-pb
 ```
-    
+
 ## Getting started
 
 1. Set your environment variables.
@@ -81,7 +80,7 @@ defer conn.Close()
 ```go
 customerServiceClient := services.NewCustomerServiceClient(conn)
 accessibleCustomers, err := customerServiceClient.ListAccessibleCustomers(
-  ctx, 
+  ctx,
   &services.ListAccessibleCustomersRequest{},
 )
 if err != nil {
@@ -131,7 +130,7 @@ for _, customer := range listAccessibleCustomersResponse.ResourceNames {
 
 ## Examples
 
-See [clients/internal/snippets](https://github.com/shenzhencenter/google-ads-pb/tree/main/clients/internal/snippets).
+See [clients/internal/snippets](https://github.com/kickhealth/google-ads-pb/tree/main/clients/internal/snippets).
 
 ## Related
 
