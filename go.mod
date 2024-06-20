@@ -1,4 +1,4 @@
-module github.com/shenzhencenter/google-ads-pb
+module github.com/kickhealth/google-ads-pb
 
 go 1.18
 
