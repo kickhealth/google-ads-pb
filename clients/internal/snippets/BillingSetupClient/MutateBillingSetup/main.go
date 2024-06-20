@@ -20,9 +20,9 @@ package main
 
 import (
 	"context"
-	clients "github.com/shenzhencenter/google-ads-pb/clients"
+	clients "github.com/kickhealth/google-ads-pb/clients"
 
-	servicespb "github.com/shenzhencenter/google-ads-pb/services"
+	servicespb "github.com/kickhealth/google-ads-pb/services"
 )
 
 func main() {
@@ -40,7 +40,7 @@ func main() {
 
 	req := &servicespb.MutateBillingSetupRequest{
 		// TODO: Fill request struct fields.
-		// See https://pkg.go.dev/github.com/shenzhencenter/google-ads-pb/services#MutateBillingSetupRequest.
+		// See https://pkg.go.dev/github.com/kickhealth/google-ads-pb/services#MutateBillingSetupRequest.
 	}
 	resp, err := c.MutateBillingSetup(ctx, req)
 	if err != nil {

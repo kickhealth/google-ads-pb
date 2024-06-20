@@ -69,7 +69,7 @@
 //
 //	req := &servicespb.MutateConversionActionsRequest{
 //		// TODO: Fill request struct fields.
-//		// See https://pkg.go.dev/github.com/shenzhencenter/google-ads-pb/services#MutateConversionActionsRequest.
+//		// See https://pkg.go.dev/github.com/kickhealth/google-ads-pb/services#MutateConversionActionsRequest.
 //	}
 //	resp, err := c.MutateConversionActions(ctx, req)
 //	if err != nil {

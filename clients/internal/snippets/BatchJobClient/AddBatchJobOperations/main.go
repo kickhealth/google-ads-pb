@@ -20,9 +20,9 @@ package main
 
 import (
 	"context"
-	clients "github.com/shenzhencenter/google-ads-pb/clients"
+	clients "github.com/kickhealth/google-ads-pb/clients"
 
-	servicespb "github.com/shenzhencenter/google-ads-pb/services"
+	servicespb "github.com/kickhealth/google-ads-pb/services"
 )
 
 func main() {
@@ -40,7 +40,7 @@ func main() {
 
 	req := &servicespb.AddBatchJobOperationsRequest{
 		// TODO: Fill request struct fields.
-		// See https://pkg.go.dev/github.com/shenzhencenter/google-ads-pb/services#AddBatchJobOperationsRequest.
+		// See https://pkg.go.dev/github.com/kickhealth/google-ads-pb/services#AddBatchJobOperationsRequest.
 	}
 	resp, err := c.AddBatchJobOperations(ctx, req)
 	if err != nil {
