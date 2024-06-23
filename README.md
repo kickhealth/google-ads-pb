@@ -142,3 +142,5 @@ Here are some related projects
 ## Contributing
 
 As this project is fully protoc-generated, we aren't accepting pull requests. However, we value your feedback and suggestions, so feel free to open an issue.
+
+foo
